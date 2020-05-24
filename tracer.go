@@ -20,7 +20,8 @@ func (t tracer) Trace(a ...interface{}) {
 	fmt.Fprintln(t.out)
 }
 
-// New does stuff
+// New initializes and returns _something_
+// that implements the Tracer interface
 func New(w io.Writer) Tracer {
 	return &tracer{out: w}
 }
